@@ -17,3 +17,4 @@ The dataset `Complete Data - Ulna.csv` contains the information extracted from t
 
 5. The `rbf_svm.R` R script was utilized for the creation of RBF SVM classification models. It contains all the examined scenarios in regards to the hyper-parameter values (cost, gamma), as well as the creation of plots and the examination of the accuracy on the training sample. The last step was not included in the research paper, as it was mostly utilized as a way to monitor over-fitting during the analysis. 
 
+6. The `boxplot.m` and `plot_arrangements.R` scripts function as supporting scripts for the above analyses and the arrangment of the age-at-death GAM plots in the Supplementary Material section of the research paper.
