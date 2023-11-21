@@ -7,11 +7,11 @@ All analyses presented in the research paper titled "Sex through the lens of cro
 The dataset `Complete Data - Ulna.csv` contains the information extracted from the [*csg-toolkit*](https://github.com/pr0m1th3as/long-bone-diaphyseal-CSG-Toolkit/tree/v1.0.1) GNU Octave package, while the `GR.csv` dataset contains the information regarding sex and age-at-death of the Athens Collection.
 
 ## Code scripts
-1. The `compile_data.m` GNU Octave script is responsible for computing the finalized version of the working dataset. More specifically, it keeps the variables needed for the analysis, calculates the extra ratios, and checks the dataset for outliers, removing them case-wise. Requires the `io` and `statistics` GNU Octave packages.
+1. The `compile_data.m` GNU Octave script is responsible for computing the finalized version of the working dataset. More specifically, it keeps the variables needed for the analysis, calculates the extra ratios, and checks the dataset for outliers, removing them case-wise. Additionally, it is where the pooled sample CSV file utilized for the classification analysis is created. Requires the `io` and `statistics` GNU Octave packages.
 
-2. The `statistical_analysis.m` GNU Octave script was used for the conduction of the bilateral asymmetry analysis. Requires the `io`, `nan`, and `statistics` GNU Octave packages.
+2. The `bilateral_analysis.m` GNU Octave script was used for the conduction of the bilateral asymmetry analysis. Requires the `io`, `nan`, and `statistics` GNU Octave packages.
 
-3. The `histograms.m` GNU Octave script produces the age-at-death distribution plots, while also creating a CSV file for the pooled sample. Requires the `io` and `statistics` GNU Octave packages.
+3. The `histograms.m` GNU Octave script produces the age-at-death distribution plot. Requires the `io` and `statistics` GNU Octave packages.
 
 4. The `age_gam.R` R script is responsible for the examination of the correlation between age-at-death and the utilized variables (analysis and plots). Requires the `readr`, `mgcv` and `ggplot` R libraries.
 
